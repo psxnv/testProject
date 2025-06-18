@@ -1,0 +1,45 @@
+.headerWrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 20px 80px;
+    opacity: 0.9;
+    color: #FFFFFF;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.headerLogo{
+    .logoImage{
+        padding-right: 50px;
+    }
+}
+
+.languageToggle {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    background: none;
+}
+
+.burgerMenu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+}

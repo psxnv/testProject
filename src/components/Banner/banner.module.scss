@@ -1,0 +1,70 @@
+.bannerScroll {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
+}
+.bannerScroll::-webkit-scrollbar {
+  display: none; 
+}
+
+.banner {
+  position: relative;
+  width: 99vw;
+  height: 100vh;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.bannerBg {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+ 
+  filter: brightness(0.65) saturate(1.1);
+  transition: transform 0.4s cubic-bezier(0.4,0,0.2,1);
+  will-change: transform;
+  pointer-events: none;
+  user-select: none;
+}
+
+.bannerTitle {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  font-size: 24vw;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-align: center;
+  line-height: 1;
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  text-transform: uppercase;
+  text-shadow: 0 4px 24px rgba(0,0,0,0.35);
+  transition: transform 0.4s cubic-bezier(0.4,0,0.2,1), opacity 0.4s cubic-bezier(0.4,0,0.2,1);
+  will-change: transform, opacity;
+  pointer-events: none;
+  user-select: none;
+}
+
+@media (max-width: 900px) {
+  .bannerTitle {
+    font-size: 18vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .banner {
+    min-height: 320px;
+  }
+  .bannerTitle {
+    font-size: 22vw;
+  }
+}

@@ -1,0 +1,62 @@
+.bannerContent {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100vh;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  pointer-events: none;
+}
+
+.bannerLogo {
+  width: 80px;
+  margin-bottom: 32px;
+}
+
+.bannerText {
+  text-align: center;
+  font-size: 2vw;
+  font-weight: 400;
+  margin-bottom: 32px;
+  max-width: 900px;
+}
+
+.bannerText h2 {
+  font-size: 2.6vw;
+  font-weight: 400;
+  margin: 0 0 16px 0;
+  line-height: 1.2;
+}
+
+.bannerText span {
+  font-weight: 700;
+  font-size: 3vw;
+}
+
+.bannerCarousel {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin-top: 32px;
+}
+
+.bannerSlideNum {
+  font-size: 1.2vw;
+  opacity: 0.8;
+}
+
+.bannerArrows button {
+  background: rgba(255,255,255,0.15);
+  border: none;
+  color: #fff;
+  font-size: 2vw;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  margin: 0 8px;
+  transition: background 0.2s;
+  pointer-events: auto;
+}
